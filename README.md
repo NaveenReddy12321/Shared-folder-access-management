@@ -59,3 +59,33 @@ This tool addresses these problems by providing a controlled, GUI-driven, and au
 All operations are logged in CSV format for easy review and compliance reporting.
 
 ### Log File Location
+C:\logs\SharedFolderAccess_Audit.csv
+
+
+### Log Fields
+- Timestamp
+- SessionId
+- ExecutedBy
+- ComputerName
+- Action
+- FolderPath
+- User
+- Permission
+- Method (ADGroup or DirectACL)
+- Result (SUCCESS or FAILED)
+- Message
+
+CSV escaping is handled to ensure log integrity even when error messages contain commas or special characters.
+
+---
+
+## Prerequisites
+
+- Windows operating system
+- PowerShell 5.1 or later
+- Active Directory domain environment
+- RSAT installed (ActiveDirectory PowerShell module)
+- Local administrator privileges
+- NTFS-based file system
+
+---
